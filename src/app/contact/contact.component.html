@@ -1,0 +1,112 @@
+<app-header></app-header>
+<div  class="container main-div" fxLayout
+fxLayout.xs="column"fxLayoutAlign="center"fxLayoutGap="10px"
+fxLayoutGap.xs="0" fxLayout.sm="column" fxLayoutGap.sm="0"
+>
+<mat-card class="example-card mat-card-content-1">
+    <mat-card-header>
+<!--       <div mat-card-avatar class="example-header-image"></div>
+ -->      <mat-card-title class="mat-title">Reach us:</mat-card-title>
+      <mat-card-subtitle></mat-card-subtitle>
+    </mat-card-header>
+<!--     <img mat-card-image src="../../assets/images/vision.jpg" alt="Who We Are">
+ -->
+    <mat-card-content >
+      <div class="content-text mat-body-1">
+            <form [formGroup]="contactForm">
+                    <div fxLayout="row" fxLayout.lt-xl="column" fxLayoutWrap="wrap">
+                      <div fxFlex="100">
+                        <div class="pb-1">
+                          <mat-form-field class="full-width">
+                            <input matInput name="name" [formControl]="contactForm.controls['name']" placeholder="Your Name">
+                          </mat-form-field>
+                          <small *ngIf="contactForm.controls.name.touched && contactForm.controls.name.errors?.required" class="form-error-msg">Name is required</small>
+                        </div>
+                        <div class="pb-1">
+                          <mat-form-field class="full-width">
+                            <input matInput name="email" [formControl]="contactForm.controls['email']" placeholder="Your Email">
+                          </mat-form-field>
+                          <small *ngIf="contactForm.controls.email.touched && contactForm.controls.email.errors?.email" class="form-error-msg">Invalid Email</small>
+                        </div>
+              
+                      </div>
+                      <div fxFlex="100">
+                        <div class="pb-1">
+                          <mat-form-field class="full-width">
+                            <input matInput name="subject" [formControl]="contactForm.controls['subject']" placeholder="Subject">
+                          </mat-form-field>
+                          <small *ngIf="contactForm.controls.subject.touched && contactForm.controls.subject.errors?.required" class="form-error-msg">Subject is required</small>
+                        </div>
+                        <div class="pb-1">
+                          <mat-form-field class="full-width">
+                            <textarea matInput row="8" name="message" [formControl]="contactForm.controls['message']" placeholder="Message"></textarea>
+                          </mat-form-field>
+                          <small *ngIf="contactForm.controls.message.touched && contactForm.controls.message.errors?.required" class="form-error-msg">Message is required</small>
+                        </div>
+                      </div>
+              
+                      <div fxFlex="100">
+                        <button mat-fab color="primary" (click)="sendemail()" [disabled]="!contactForm.valid"><mat-icon>send</mat-icon></button>
+                      </div>
+                    </div>
+                  </form>
+                  <div  class="footer-box">
+                      <h4 class="footer-box-title"><b>Disclaimer</b></h4>
+                      <p>The information contained in this website is for general information purposes only. The information is provided by Solidev Electrosoft Pvt Ltd and while we endeavour to keep the information up to date and correct.</p>
+                      <div class="socials pt-1">
+                        <ul>
+                           <li><a target="_blank" href="https://www.facebook.com/solidevelectrosoft/" class="social-icon facebook"></a></li>
+                          <li><a target="_blank" href="https://www.linkedin.com/in/davinder-pal-906a53166/" class="social-icon linkedin"></a></li>
+                          <li><a target="_blank" href="https://twitter.com/solidevltd" class="social-icon twitter"></a></li>
+                        </ul>
+                      </div>
+                    </div>
+      </div>
+    </mat-card-content>
+<!--     <mat-card-actions>
+      <button mat-button>LIKE</button>
+      <button mat-button>SHARE</button>
+    </mat-card-actions> -->
+  </mat-card>
+
+  <mat-card class="example-card mat-card-content-2">
+      <mat-card-header>
+  <!--       <div mat-card-avatar class="example-header-image"></div>
+   -->      <mat-card-title class="mat-title">Locate:</mat-card-title>
+        <mat-card-subtitle></mat-card-subtitle>
+      </mat-card-header>
+      <div class="map-responsive">
+      <iframe width="600" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJpT2owc8pEDkRFqep020Wq9E&key=AIzaSyDuxLsuXzrvkS7gTMzJ_EurivXUHmJ2lxw" allowfullscreen></iframe>       
+    </div>
+      <mat-card-content >
+        
+        <div class="content-text mat-body-1">
+            <div class="footer-box">
+                
+                <mat-list>
+                  <mat-list-item>
+                    <mat-icon mat-list-icon color="accent">email</mat-icon>
+                    <h5 matLine><b>Email</b></h5>
+                    <p matLine> support@solidevelectrosoft.com </p>
+                  </mat-list-item>
+                  <mat-list-item>
+                      <mat-icon mat-list-icon color="accent">location_on</mat-icon>
+                      <h5 matLine><b>Address</b></h5>
+                      <p matLine>Solidev Electrosoft Private Limited</p>
+                      <p matLine>2nd floor, SAS Commercial Complex, Urban Estate </p>
+                       <p matLine>Patiala, Punjab, India 147002 </p>
+                    </mat-list-item>
+                </mat-list>
+              </div>
+  
+        </div>
+      </mat-card-content>
+  <!--     <mat-card-actions>
+        <button mat-button>LIKE</button>
+        <button mat-button>SHARE</button>
+      </mat-card-actions> -->
+    </mat-card>
+ 
+        </div>
+        
+        <app-footer></app-footer>

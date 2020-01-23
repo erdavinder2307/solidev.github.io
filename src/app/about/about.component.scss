@@ -1,0 +1,118 @@
+
+
+  .child-card {
+    min-width: 250px;
+
+    margin: 10px;
+
+
+}
+.main {
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-size: 25px
+}
+.main-sub {
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+}
+.main-div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mat-content {
+  color: white;
+  font-size: 18px;
+}
+.mat-sub-content {
+  color: white;
+}
+/* div{
+    color: #fff!important;
+    text-shadow: 3px 3px 10px #000;
+} */
+
+mat-card.example-card.mat-card {
+  margin-top: 10vh;
+  margin-bottom: 10vh;
+
+  margin-left: 10px;
+  margin-right: 10px;
+
+
+}
+
+.mat-card-content, .mat-card-subtitle {
+  font-size: 18px;
+}
+.mat-card-header .mat-card-title {
+  font-size: 25px;
+}
+/* .mat-card-content-1
+{
+/*   background: url(../../assets/images/who-we-are.webp) center center no-repeat!important;
+ *  background-size: cover!important;
+  color: white;
+  background-color: #0031ca;
+
+}
+.mat-card-content-2
+{
+/*   background: url(../../assets/images/what-we-believe.webp) center center no-repeat!important;
+ *  background-size: cover!important;
+  color: white;
+  background-color: #0031ca;
+
+
+}
+.mat-card-content-3
+{
+/*   background: url(../../assets/images/we-are-here-to.webp) center center no-repeat!important;
+ *  background-size: cover!important;
+  color: white;
+  background-color: #0031ca;
+
+}
+
+.mat-card-content {
+  font-size: 20px;
+}
+
+.content-text
+{
+  padding: 20px;
+}
+.mat-card-header .mat-card-title {
+  font-size: 24px;
+}
+
+mat-card.example-card.mat-card {
+  border: 3px white solid;
+}
+
+mat-card-header.mat-card-header {
+  border-bottom: 3px white solid;
+}
+
+mat-card.example-card.mat-card {
+  padding: 0px;
+}
+
+mat-card-header.mat-card-header {
+  background-color: white;
+  color: black;
+} */
+
+
+mat-card.example-card.mat-card {
+  min-width: 29vw;
+}
+
+.container.main-div {
+  //background-color: #E0E0E0;
+}

@@ -1,0 +1,84 @@
+<header>
+<div fxShow.sm="true"  fxShow.sm="true"   fxHide.md="true"  fxHide.lg ="true"  >
+
+<mat-toolbar color="primary">
+
+    <mat-toolbar-row>
+            <span><a routerLink="/index"><img src="assets/images/logo-full.png"></a></span>
+
+            <span class="solidev-spacer"></span>
+
+            <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
+                    <mat-icon>menu</mat-icon>
+                  </button>
+                  <mat-menu #menu="matMenu">
+                   <!--      <button mat-menu-item routerLink="/index">
+                                <mat-icon class="solidev-icon" aria-hidden="false" aria-label="home icon">home</mat-icon>
+                                <span>Home</span>
+                        </button> -->
+                        <button mat-menu-item routerLink="/about">
+                                <mat-icon class="solidev-icon" aria-hidden="false" aria-label="work icon">work</mat-icon>
+                                <span>Know us</span>
+                        </button>
+                        <button mat-menu-item routerLink="/service">
+                                <mat-icon class="solidev-icon" aria-hidden="false" aria-label="assignment icon">assignment</mat-icon>
+                                <span>Grow your business</span>
+                        </button>
+                    <!--     <button mat-menu-item routerLink="/clients">
+                                <mat-icon class="solidev-icon" aria-hidden="false" aria-label="rate_review icon">rate_review</mat-icon>
+                                <span>Our Clients</span>
+                        </button> -->
+                        <button mat-menu-item routerLink="/learn">
+                                <mat-icon class="solidev-icon" aria-hidden="false" aria-label="assessment icon">assessment</mat-icon>
+                                <span>Learn & Earn</span>
+                        </button>
+                        <button mat-menu-item routerLink="/contact">
+                                <mat-icon class="solidev-icon" aria-hidden="false" aria-label="assessment icon">call</mat-icon>
+                                <span>Get in touch</span>
+                        </button>
+                   <!--      <button mat-menu-item routerLink="/developers">
+                                <mat-icon class="solidev-icon" aria-hidden="false" aria-label="apps icon">apps</mat-icon>
+                                <span>Our Developers</span>
+                        </button> -->
+                        <button mat-menu-item routerLink="/login">
+                                <mat-icon class="solidev-icon" aria-hidden="false" aria-label="assessment icon">people</mat-icon>
+                                <span>Employee Login</span>
+                        </button>
+
+                      </mat-menu>
+
+
+
+
+
+
+    </mat-toolbar-row>
+  </mat-toolbar>
+
+</div>
+
+<div  fxHide.xs="true"  fxHide.sm="true"   fxShow.md="true"  fxShow.lg ="true"  >
+        <mat-toolbar color="primary">
+
+                <mat-toolbar-row>
+                        <span><a routerLink="/index"><img src="assets/images/logo-full.png"></a></span>
+        <div class="example-button-row">
+<!--             <a mat-flat-button routerLink="/index">Home</a>
+ -->            <a mat-flat-button routerLink="/about">Know us</a>
+            <a mat-flat-button routerLink="/service">Grow your business</a>
+<!--             <a mat-flat-button routerLink="/clients">Our Clients</a>
+ -->            <a mat-flat-button routerLink="/learn">Learn & Earn</a>
+<!--  <a mat-flat-button routerLink="/developers">Our Developer</a>
+ -->            <a mat-flat-button routerLink="/contact">Get in touch</a>
+
+
+          </div>
+          <span class="solidev-spacer"></span>
+          <a mat-flat-button href="tel:+919780666828">Call +91 9780666828</a>
+
+          <a mat-stroked-button routerLink="/login">Employee Login</a>
+
+        </mat-toolbar-row>
+    </mat-toolbar>
+        </div>
+</header>
